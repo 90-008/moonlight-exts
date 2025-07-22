@@ -1,5 +1,5 @@
 import Dispatcher from "@moonlight-mod/wp/discord/Dispatcher";
-import { PresenceStore } from "@moonlight-mod/wp/common_stores";
+import { SelfPresenceStore } from "@moonlight-mod/wp/common_stores";
 import spacepack from "@moonlight-mod/wp/spacepack_spacepack";
 
 const ApplicationAssetUtils = spacepack.findByCode("getAssetImage: size must === [")[0];
@@ -154,14 +154,14 @@ const getLargeImage = (track: TrackData): string | undefined => {
 
 const getActivity = async (): Promise<Activity | null> => {
   if (getOpt<boolean>("hideWithActivity")) {
-    if (PresenceStore.getActivities().some((a: { application_id: string }) => a.application_id !== applicationId)) {
+    if (SelfPresenceStore.getActivities().some((a: { application_id: string }) => a.application_id !== applicationId)) {
       return null;
     }
   }
 
   if (getOpt<boolean>("hideWithSpotify")) {
     if (
-      PresenceStore.getActivities().some(
+      SelfPresenceStore.getActivities().some(
         (a: { type: ActivityType; application_id: string }) =>
           a.type === ActivityType.LISTENING && a.application_id !== applicationId
       )
