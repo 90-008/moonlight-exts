@@ -7,8 +7,8 @@
     "name": "Last.fm Rich Presence",
     "tagline": "Adds last.fm rich presence",
     "description": "**Configuration is required**\n\nAn API key is required to fetch your current track. To get one, you can visit https://www.last.fm/api/account/create and fill in the following information:\n\nApplication name: Discord Rich Presence\nApplication description: (personal use)\n\nAnd copy the API key (not the shared secret!)",
-    "authors": ["yusdacra"],
-    "source": "https://git.gaze.systems/90008/moonlight-exts"
+    "authors": ["90-008"],
+    "source": "https://github.com/90-008/moonlight-exts"
   },
   "dependencies": ["spacepack", "common"],
   "settings": {

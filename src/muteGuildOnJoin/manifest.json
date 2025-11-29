@@ -6,8 +6,8 @@
   "meta": {
     "name": "Mute Guild on Join",
     "tagline": "Permanently mutes guilds on join",
-    "authors": ["yusdacra"],
-    "source": "https://git.gaze.systems/90008/moonlight-exts"
+    "authors": ["90-008"],
+    "source": "https://github.com/90-008/moonlight-exts"
   },
   "dependencies": ["spacepack"]
 }
