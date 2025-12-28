@@ -1,0 +1,14 @@
+{
+  "$schema": "https://moonlight-mod.github.io/manifest.schema.json",
+  "id": "arrpc",
+  "version": "1.0.0",
+  "apiLevel": 2,
+  "meta": {
+    "name": "WebRichPresence (arRPC)",
+    "tagline": "Enables Rich Presence on Web via arRPC",
+    "description": "Connects to an arRPC server to display Rich Presence. Ported from the Vencord plugin.",
+    "authors": ["90-008"],
+    "source": "https://github.com/OpenAsar/arrpc"
+  },
+  "dependencies": ["spacepack", "common"]
+}
